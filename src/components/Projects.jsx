@@ -15,7 +15,7 @@ import { useState } from 'react';
 import { FaGithub } from 'react-icons/fa';
 import amazonCloneImg from '../assets/projects/Amazona_Dashboard.png';
 import cropAdvisorImg from '../assets/projects/Crop_Advisor.png';
-import Librarymanagementimg from '../assets/projects/Library_Management.png';
+import Librarymanagementimg from '../assets/projects/Library_management.png';
 //import studentManagementImg from '../assets/projects/Student_Mangement_System.png';
 import AmazonsalesdataImg from '../assets/projects/Amazon_sales_data.png';
 import IotImg from '../assets/projects/Iot.png';
