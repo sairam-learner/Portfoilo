@@ -15,16 +15,16 @@ const getDesignTokens = (mode) => ({
     mode,
     ...(mode === 'light'
       ? {
-          primary: { main: '#06b6d4' },
-          secondary: { main: '#2dd4bf' },
-          background: { default: '#cefcff', paper: '#ffffff' },
-          text: { primary: '#0F172A', secondary: '#475569' },
+          primary: { main: '#43a047' }, // light green
+          secondary: { main: '#a5d6a7' }, // lighter green
+          background: { default: '#e8f5e9', paper: '#ffffff' }, // very light green background
+          text: { primary: '#1b3c1b', secondary: '#4e684e' }, // dark green text for readability
         }
       : {
-          primary: { main: '#00bcd4' },
-          secondary: { main: '#ff9800' },
-          background: { default: '#0a1929', paper: '#132040' },
-          text: { primary: '#f3f6fb', secondary: '#b6c2d1' },
+          primary: { main: '#14532d' }, // dark green
+          secondary: { main: '#388e3c' }, // medium dark green
+          background: { default: '#10281a', paper: '#1b3c26' }, // very dark green background
+          text: { primary: '#e6f4ea', secondary: '#a5d6a7' }, // light greenish text for readability
         }),
   },
   typography: {
@@ -48,7 +48,7 @@ const getDesignTokens = (mode) => ({
         root: {
           borderRadius: 12,
           border: '1px solid',
-          borderColor: mode === 'light' ? '#a5f3fc' : '#22304a',
+          borderColor: mode === 'light' ? '#a5d6a7' : '#808000',
           transition: 'transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out',
           '&:hover': {
             transform: 'translateY(-4px)',
@@ -61,7 +61,7 @@ const getDesignTokens = (mode) => ({
       styleOverrides: {
         root: {
           border: '1px solid',
-          borderColor: mode === 'light' ? '#a5f3fc' : '#22304a',
+          borderColor: mode === 'light' ? '#a5d6a7' : '#808000',
         },
       },
     },

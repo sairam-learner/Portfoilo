@@ -1,37 +1,44 @@
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import { Box, Button, Card, Paper, Typography } from '@mui/material';
 
-import powerBiImg from '../assets/certificates/Basics of Microsoft Power BI.jpg';
+//import powerBiImg from '../assets/certificates/Basics of Microsoft Power BI.jpg';
 import genAiImg from '../assets/certificates/GenAI Job Simulation.jpg';
+import genAipdf from '../assets/certificates/GenAI Job Simulation.pdf';
+
 import accentureSoftEngImg from '../assets/certificates/Software Engineering Job Simulation.jpg';
+import accentureSoftEngpdf from '../assets/certificates/Software Engineering Job Simulation.pdf';
+
 import awsArchImg from '../assets/certificates/Solutions Architecture Job Simulation.jpg';
-import ibmAdobeTrustImg from '../assets/certificates/Trust What You Create - IBM Adobe.jpg';
+import awsArchpdf from '../assets/certificates/Solutions Architecture Job Simulation.pdf';
+
+//import ibmAdobeTrustImg from '../assets/certificates/Trust What You Create - IBM Adobe.jpg';
 import vivaSparcImg from '../assets/certificates/VivaSPARC Campus Ambassador.jpg';
+import vivaSparcpdf from '../assets/certificates/VivaSPARC Campus Ambassador.pdf';
 
 // Certificate images and PDFs
 import iotImg from '../assets/certificates/Internet of Things.jpg';
-//import iotPdf from '../assets/certificates/Internet of Things.pdf';
+import iotPdf from '../assets/certificates/Internet of Things.pdf';
 
 import salesforceCatalystImg from '../assets/certificates/Salesforce Developer Catalyst.jpg';
-//import salesforceCatalystPdf from '../assets/certificates/Salesforce Developer Catalyst.pdf';
+import salesforceCatalystPdf from '../assets/certificates/Salesforce Developer Catalyst.pdf';
 
 import unnatBharatImg from '../assets/certificates/Unnat Bharat Abhiyan.jpg';
-//import unnatBharatPdf from '../assets/certificates/Unnat Bharat Abhiyan.pdf';
+import unnatBharatPdf from '../assets/certificates/Unnat Bharat Abhiyan.pdf';
 
 import dukeProgrammingImg from '../assets/certificates/Programming Fundamentals - Duke.jpg';
-//import dukeProgrammingPdf from '../assets/certificates/Programming Fundamentals - Duke.pdf';
+import dukeProgrammingPdf from '../assets/certificates/Programming Fundamentals - Duke.pdf';
 
 import michiganPythonImg from '../assets/certificates/Python Functions Files - Michigan.jpg';
-//import michiganPythonPdf from '../assets/certificates/Python Functions Files - Michigan.pdf';
+import michiganPythonPdf from '../assets/certificates/Python Functions Files - Michigan.pdf';
 
 import timeManagementImg from '../assets/certificates/Time and Stress Management.jpg';
-//import timeManagementPdf from '../assets/certificates/Time and Stress Management.pdf';
+import timeManagementPdf from '../assets/certificates/Time and Stress Management.pdf';
 
 import leadershipTeamsImg from '../assets/certificates/Leadership and Teams.jpg';
-//import leadershipTeamsPdf from '../assets/certificates/Leadership and Teams.pdf';
+import leadershipTeamsPdf from '../assets/certificates/Leadership and Teams.pdf';
 
 import deloitteCyberImg from '../assets/certificates/Deloitte Cyber Job Simulation.jpg';
-//import deloitteCyberPdf from '../assets/certificates/Deloitte Cyber Job Simulation.pdf';
+import deloitteCyberPdf from '../assets/certificates/Deloitte Cyber Job Simulation.pdf';
 
 // Certificate list
 const certifications = [
@@ -40,98 +47,98 @@ const certifications = [
     organization: 'NPTEL - IIT Kharagpur',
     issue_date: 'October 2024',
     image: iotImg,
-    //file: iotPdf,
+    file: iotPdf,
   },
   {
     title: 'Salesforce Developer Catalyst Program',
     organization: 'FutureSkills Prime (MeitY-NASSCOM)',
     issue_date: 'January 2024',
     image: salesforceCatalystImg,
-    //file: salesforceCatalystPdf,
+    file: salesforceCatalystPdf,
   },
   {
     title: 'Unnat Bharat Abhiyan Participation',
     organization: 'Malla Reddy University',
     issue_date: 'December 2022',
     image: unnatBharatImg,
-    //file: unnatBharatPdf,
+    file: unnatBharatPdf,
   },
   {
     title: 'Programming Fundamentals',
     organization: 'Duke University via Coursera',
     issue_date: 'October 2023',
     image: dukeProgrammingImg,
-    //file: dukeProgrammingPdf,
+    file: dukeProgrammingPdf,
   },
   {
     title: 'Python Functions, Files, and Dictionaries',
     organization: 'University of Michigan via Coursera',
     issue_date: 'May 2023',
     image: michiganPythonImg,
-    //file: michiganPythonPdf,
+    file: michiganPythonPdf,
   },
   {
     title: 'Time and Stress Management (PRDV005)',
     organization: 'Saylor Academy',
     issue_date: 'April 2024',
     image: timeManagementImg,
-    //file: timeManagementPdf,
+    file: timeManagementPdf,
   },
   {
     title: 'Leadership and Teams (PRDV224)',
     organization: 'Saylor Academy',
     issue_date: 'April 2024',
     image: leadershipTeamsImg,
-    //file: leadershipTeamsPdf,
+    file: leadershipTeamsPdf,
   },
   {
     title: 'Cyber Job Simulation',
     organization: 'Deloitte via Forage',
     issue_date: 'May 2025',
     image: deloitteCyberImg,
-    //file: deloitteCyberPdf,
+    file: deloitteCyberPdf,
   },
   {
     title: 'Solutions Architecture Job Simulation',
     organization: 'AWS via Forage',
     issue_date: 'May 2025',
     image: awsArchImg,
-    file: null, // or awsArchPdf if available
+    file: awsArchpdf, // or awsArchPdf if available
   },
-  {
-    title: 'Basics of Microsoft Power BI',
-    organization: 'UniAthena in partnership with CIQ, UK',
-    issue_date: 'May 2025',
-    image: powerBiImg,
-    file: null,
-  },
+  // {
+  // title: 'Basics of Microsoft Power BI',
+  // organization: 'UniAthena in partnership with CIQ, UK',
+  // issue_date: 'May 2025',
+  // image: powerBiImg,
+  // file: null,
+  //},
   {
     title: 'Software Engineering Job Simulation',
     organization: 'Accenture via Forage',
     issue_date: 'May 2025',
     image: accentureSoftEngImg,
-    file: null,
+    file: accentureSoftEngpdf,
   },
-  {
-    title: 'Trust What You Create – IBM & Adobe',
-    organization: 'IBM SkillsBuild',
-    issue_date: 'May 2025',
-    image: ibmAdobeTrustImg,
-    file: null,
-  },
+  //{
+  //title: 'Trust What You Create – IBM & Adobe',
+  //organization: 'IBM SkillsBuild',
+  //issue_date: 'May 2025',
+  //image: ibmAdobeTrustImg,
+  //file: null,
+  //},
   {
     title: 'GenAI Job Simulation',
     organization: 'BCG X via Forage',
     issue_date: 'May 2025',
     image: genAiImg,
-    file: null,
+    file: genAipdf,
   },
   {
     title: 'Campus Ambassador – VivaSPARC',
     organization: 'Ministry of Corporate Affairs',
     issue_date: 'May 2025',
     image: vivaSparcImg,
-    file: null,
+    file: vivaSparcpdf,
   },
 ];
 
